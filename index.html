@@ -9,52 +9,83 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
-<div>    
+    <!-- Navigation Bar -->
     <nav class="navigation_bar">
-    <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-padding-large w3-hover-white w3-large w3-theme-d2" href="javascript:void(0);" onclick="toggleNav()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
-    <a href="#" class="w3-bar-item w3-button w3-padding-large w3-theme-d4"><i class="fa fa-home w3-margin-right"></i>Cyssigram</a>
-    <a href="#" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white title="News"><i class="fa fa-globe"></i></a>
-    <a href="#" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white" title="Messages"><i class="fa fa-envelope"></i></a>
-    <a href="#" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white" title="Notifications"><i class="fa fa-bell"></i></a>
-</nav>
-</div>
-
-</nav>
-<div class="w3-col m3">
-    <!-- Profile -->
-    <div class="w3-card w3-round w3-white">
-      <div class="w3-container">
-       <h4 class="w3-center">Cypress Bullo</h4>
-       <p class="w3-center"><img src="Cy .png" class="w3-circle" style="height:106px;width:106px" alt="Avatar"></p>
-       <hr>
-       <p><i class="fa fa-pencil fa-fw w3-margin-right w3-text-theme"></i> IT Student</p>
-       <p><i class="fa fa-home fa-fw w3-margin-right w3-text-theme"></i> Cagayan de Oro City</p>
-       <p><i class="fa fa-birthday-cake fa-fw w3-margin-right w3-text-theme"></i> February 3, 2004</p>
-      </div>
-    </div>
-    <br>
-
-    <!-- Sidebar Menu -->
-    <nav class="sidebar_menu">
-        <!-- Menu items will go here -->
+        <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-padding-large w3-hover-white w3-large w3-theme-d2" href="javascript:void(0);" onclick="toggleNav()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+        <a href="#" class="w3-bar-item w3-button w3-padding-large w3-theme-d4"><i class="fa fa-home w3-margin-right"></i>Cyssigram</a>
+        <a href="#" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white" title="News"><i class="fa fa-globe"></i></a>
+        <a href="#" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white" title="Messages"><i class="fa fa-envelope"></i></a>
+        <a href="#" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white" title="Notifications"><i class="fa fa-bell"></i></a>
     </nav>
 
-    <section class="hobbies">
-        <h3>Interests</h3>
-        <nav class="tags">
-            <!-- Tags will go here -->
+    <div class="container">
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <div class="w3-card w3-round w3-white">
+                <div class="w3-container">
+                    <h4 class="w3-center">Cypress Bullo</h4>
+                    <p class="w3-center"><img src="Cy .png" class="w3-circle" style="height:106px;width:106px" alt="Avatar"></p>
+                    <hr>
+                    <p><i class="fa fa-pencil fa-fw w3-margin-right w3-text-theme"></i> IT Student</p>
+                    <p><i class="fa fa-home fa-fw w3-margin-right w3-text-theme"></i> Cagayan de Oro City</p>
+                    <p><i class="fa fa-birthday-cake fa-fw w3-margin-right w3-text-theme"></i> February 3, 2004</p>
+                </div>
+            </div>
+            <nav class="sidebar_menu">
+                <!-- Menu items -->
+            </nav>
+            <section class="hobbies">
+                <h3>Interests</h3>
+                <nav class="tags"></nav>
+            </section>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="content">
+            <section class="status-post">
+                <section class="status">
+                    <img src="images/dalsprof.jpg" alt="Profile Picture" class="status-profile-pic">
+                    <span>Cypress Bullo</span>
+                </section>
+                <section class="post-input">
+                    <textarea placeholder="Post Something"></textarea>
+                    <button class="post-button">Post</button>
+                    <button class="post-button">Live</button>
+                    <button class="post-button">Add Photo</button>
+                </section>
+            </section>
+            <section class="post-container">
+                <!-- Posts will go here -->
+            </section>
+        </main>
+
+        <!-- Right Sidebar -->
+        <aside class="right-sidebar">
+            <section class="card event">
+                <h3>Upcoming Events:</h3>
+                <img src="https://media.istockphoto.com/id/479977238/photo/table-setting-for-an-event-party-or-wedding-reception.jpg?s=612x612&w=0&k=20&c=yIKLzW7wMydqmuItTTtUGS5cYTmrRGy0rXk81AltdTA=" alt="Event Image">
+                <strong>Gala Night</strong>
+                <p>March 22</p>
+                <button class="button">More</button>
+            </section>
+            <section class="card friend-request">
+                <h3>Friend Request</h3>
+                <img src="https://scontent.fcgm1-1.fna.fbcdn.net/v/t39.30808-6/471858331_1958364678006252_6309126067840482919_n.jpg?_nc_cat=1&ccb=1-7&_nc_sid=6ee11a&_nc_eui2=AeFcNQRrQYzqXcq0paR1TviAtMNG_SqR8se0w0b9KpHyx7tSQpVD1U9Evur4bHgY3vSnsTBp9k981He5fX_7Cll7&_nc_ohc=vHoZdLcjt6IQ7kNvgEBaFlC&_nc_oc=Adjhe5RvmwHsg7FBAvNDwlHTAlJYYKOLyqmDyv76OtblWhDPB5B_K45UhV-82JHolks&_nc_zt=23&_nc_ht=scontent.fcgm1-1.fna&_nc_gid=A7bwsSfeo52G_r_wInF3exg&oh=00_AYAEdj7g5Llp_r1AzD0U8HJSOjnrIBQXwx20uou4a8Py0A&oe=67CE1963" alt="Friend's Avatar" class="friend-avatar">
+                <p>Cutie Pie</p>
+                <nav class="actions">
+                    <button class="accept">Accept</button>
+                    <button class="decline">Decline</button>
+                </nav>
+            </section>
+        </aside>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <nav class="footer-bottom">
+            <p>&copy; SocMed 2025. All rights reserved.</p>
         </nav>
-    </section>
-    <section class="notification">
-        <span class="close-btn">&times;</span>
-        <h3>Hey!</h3>
-        <p>Someone is looking at your profile. Find out who.</p>
-    </section>
-</nav>
-        
-
-
+    </footer>
 </body>
 </html>

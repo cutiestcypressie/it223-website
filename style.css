@@ -218,6 +218,7 @@ body {
   padding: 10px;
   background: white;
   border-radius: 5px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 .w3-circle {
@@ -234,6 +235,7 @@ body {
   color: #ffffff;
   justify-content: center;
   display: inside;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
 
 
 }
@@ -251,6 +253,7 @@ body {
 
 .sidebar_menu button:hover {
   background-color: #4a2e21; /* Darker brown on hover */
+  box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.3); 
 }
 
 
@@ -270,6 +273,7 @@ body {
   height: auto; /* Auto height based on content */
   margin: 0 auto; /* Center the container */
   border-radius: 5px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 /* Profile picture in status section */
@@ -317,18 +321,19 @@ body {
 
 /* ========== Right Sidebar ========== */
 .right-sidebar {
-  width: 180px;
+  width: 350px;
   margin-right: 200px;
 }
 
 /* Event and friend request cards */
 .card {
   background-color: white;
-  padding: 10px;
+  padding: 40px;
   border-radius: 5px;
   margin-bottom: 10px;
   text-align: center;
   width: 125%;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 /* Event image */
@@ -337,10 +342,11 @@ body {
   width: 100%;
 }
 
+
 /* Friend request avatar */
 .friend-avatar {
   width: 60px;
-  height: 5px;
+  height: auto;
   object-fit: cover;
 }
 
@@ -376,7 +382,7 @@ body {
   width: 100%;
   height: auto;
   border-radius: 5px;
-  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
   padding: 15px;
 }
 
@@ -408,13 +414,15 @@ body {
 /* Post Images */
 .post-images {
   display: flex;
-  justify-content: center; /* Horizontally centers the images */
+  justify-content:center; /* Horizontally centers the images */
   gap: 10px;
   gap: 5px;
 }
 
 .post-images img {
   width: 50%;
+  height: auto;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
 }
 
 /* Like and Comment Section */
@@ -436,6 +444,32 @@ body {
   align-items: center;
   gap: 5px;
 }
+
+.button {
+  display: flex;
+  justify-content: center;
+  color: white;
+  width:100px;
+}
+
+.more-info-btn {
+  display: block; /* Makes it a block element */
+  width: 150px; /* Adjust width as needed */
+  padding: 12px; /* Makes the button bigger */
+  margin: 10px auto; /* Centers the button horizontally */
+  text-align: center;
+  background-color: #5a3a2b; /* Button color */
+  color: white;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.more-info-btn:hover {
+  background-color: #4a2e21; /* Darker brown on hover */
+}
+
 
 .like-btn {
   color: white; /* Ensure the icon is white */

@@ -126,7 +126,7 @@ html, body {
 
 /* Main container to fill remaining space */
 .container {
-  flex: 1; /* Pushes the footer down */
+  flex: 1; 
   display: flex;
   padding: 20px;
   gap: 10px;
@@ -147,14 +147,14 @@ html, body {
 /* ========== Global Styles ========== */
 body {
   font-family: 'Arial', sans-serif;
-  background-color: #e6d2af; /* Light beige background */
+  background-color: #e6d2af; 
   margin: 0;
   padding: 0;
 }
 
 /* ========== Navigation Bar ========== */
 .navigation_bar {
-  background-color: #5a3a2b; /* Dark brown */
+  background-color: #5a3a2b; 
   display: flex;
   align-items: center;
   color: white;
@@ -168,7 +168,7 @@ body {
 }
 
 .navigation_bar a:hover {
-  background-color: #4a2e21; /* Darker brown on hover */
+  background-color: #4a2e21; 
 }
 
 /* Notification badge */
@@ -227,7 +227,7 @@ body {
 
 /* Sidebar menu */
 .sidebar_menu {
-  background-color: #5a3a2b; /* Dark brown */
+  background-color: #5a3a2b;
   width: 100%;
   border-radius: 5px;
   margin-top: 10px;
@@ -253,7 +253,7 @@ body {
 }
 
 .sidebar_menu button:hover {
-  background-color: #4a2e21; /* Darker brown on hover */
+  background-color: #4a2e21; 
   box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.3); 
 }
 
@@ -270,9 +270,9 @@ body {
 .status-post {
   background-color: white;
   padding: 20px;
-  width: 100%; /* Adjust width relative to the parent/container */
-  height: auto; /* Auto height based on content */
-  margin: 0 auto; /* Center the container */
+  width: 100%; 
+  height: auto; 
+  margin: 0 auto; 
   border-radius: 5px;
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
 }
@@ -320,7 +320,7 @@ textarea {
 }
 
 .post-button:hover {
-  background-color: #4a2e21; /* Darker brown on hover */
+  background-color: #4a2e21; 
 }
 
 /* ========== Right Sidebar ========== */
@@ -402,7 +402,7 @@ textarea {
 
 /* Accept button */
 .accept {
-  background-color: #4CAF50; /* Green */
+  background-color: #4CAF50;
   color: white;
 }
 
@@ -412,7 +412,7 @@ textarea {
 
 /* Decline button */
 .decline {
-  background-color: #f44336; /* Red */
+  background-color: #f44336; 
   color: white;
 }
 
@@ -469,7 +469,7 @@ textarea {
 /* Post Images */
 .post-images {
   display: flex;
-  justify-content:center; /* Horizontally centers the images */
+  justify-content:center; 
   gap: 10px;
   gap: 5px;
 }
@@ -528,15 +528,15 @@ textarea {
 
 
 .like-btn {
-  color: white; /* Ensure the icon is white */
+  color: white; 
 }
 
 .comment-btn {
-  color: white; /* Ensure the icon is white */
+  color: white; 
 }
 
 .post-actions button:hover {
-  background-color: #4a2e21; /* Darker brown on hover */
+  background-color: #4a2e21; 
 }
 
 .post-actions i {
@@ -550,7 +550,7 @@ textarea {
   padding: 15px;
   border-radius: 5px;
   box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
-  width: 250px; /* Adjust width as needed */
+  width: 250px;
   text-align: left;
 }
 
@@ -591,8 +591,8 @@ textarea {
 
 .post-divider {
   border: none;
-  border-top: 1px solid #ddd; /* Light gray line */
-  margin-top: 5px; /* Adjust this value */
+  border-top: 1px solid #ddd;
+  margin-top: 5px;
   margin-bottom: 10px;
 }
 

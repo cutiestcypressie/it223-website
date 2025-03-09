@@ -1,256 +1,219 @@
-/* General Styles */
-* {
-  box-sizing: border-box;
+/* ========== Global Styles ========== */
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #e6d2af; /* Light beige background */
   margin: 0;
   padding: 0;
 }
 
-body {
-  font-family: Arial, sans-serif;
-  margin: 80px;
-  padding: 0;
-  background-color: #e5d3b3;
-  color: #25150d;
-  min-height: 100vh;
+/* ========== Navigation Bar ========== */
+.navigation_bar {
+  background-color: #5a3a2b; /* Dark brown */
+  padding: 15px;
   display: flex;
-  flex-direction: column;
-}
-
-header {
-  background-color: #644535;
-  padding: 10px 20px;
-  color: rgb(148, 57, 57);
-  display: flex;
+  align-items: center;
   justify-content: space-between;
-  align-items: center;
-  position: fixed;
-  width: 100%;
-  top: 0;
-  z-index: 1000;
-}
-
-/* Navbar */
-.left-sidebar, .navigation_bar {
-  position: fixed;
-  width: 100%;
-  top: 0;
-  background-color: #644535;
   color: white;
-  padding: 10px 0;
-  z-index: 1000;
 }
 
-/* Profile Card */
-.profile-card {
-  background: white;
-  padding: 20px;
-  border-radius: 10px;
-  text-align: center;
-  max-width: 300px;
-  margin: auto;
-}
-
-.profile-pic {
-  width: 80px;
-  height: 80px;
-  border-radius: 50%;
-  margin-bottom: 10px;
-}
-
-.profile-card h2 {
-  font-size: 18px;
-  margin: 10px 0;
-}
-
-.profile-card p {
-  color: #666;
-}
-
-/* Sidebar Menu */
-.sidebar_menu {
-  background-color: white;
-  padding: 15px;
-  border-radius: 10px;
-  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
-  margin-top: 20px;
-}
-
-.sidebar_menu a {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  color: #333;
+/* Navigation links */
+.navigation_bar a {
+  color: white;
   text-decoration: none;
-  padding: 10px;
-  border-radius: 5px;
-  transition: background-color 0.3s ease;
+  padding: 10px 15px;
+  font-size: 18px;
 }
 
-.sidebar_menu a:hover {
-  background-color: #f1f1f1;
+.navigation_bar a:hover {
+  background-color: #4a2e21; /* Darker brown on hover */
 }
 
-/* Interests */
-.interests {
-  background: white;
-  padding: 15px;
-  border-radius: 10px;
-  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
-  margin-top: 20px;
-}
-
-/* Notification */
+/* Notification badge */
 .notification {
-  background: #cfd8dc;
-  padding: 10px;
-  border-radius: 10px;
-  margin-top: 5px;
   position: relative;
 }
 
-.close-btn {
+.badge {
   position: absolute;
-  top: 5px;
-  right: 10px;
-  font-size: 20px;
+  top: -5px;
+  right: -8px;
+  background: green;
+  color: white;
+  font-size: 12px;
+  padding: 3px 7px;
+  border-radius: 50%;
+}
+
+/* Profile icon in the navigation bar */
+.nav-right .profile-icon img {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  border: 2px solid green;
+}
+
+/* ========== Page Layout ========== */
+.container {
+  display: flex;
+  padding: 20px;
+  gap: 20px;
+}
+
+/* ========== Sidebar (Left Section) ========== */
+.sidebar {
+  width: 250px;
+}
+
+/* Sidebar profile card */
+.w3-card {
+  padding: 15px;
+  background: white;
+  border-radius: 10px;
+}
+
+.w3-circle {
+  border-radius: 50%;
+}
+
+/* Sidebar menu */
+.sidebar_menu {
+  background-color: #5a3a2b; /* Dark brown */
+  border-radius: 10px;
+  padding: 10px;
+  margin-top: 10px;
+}
+
+.sidebar_menu button {
+  width: 100%;
+  background: none;
+  border: none;
+  color: white;
+  padding: 10px;
+  text-align: left;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.sidebar_menu button:hover {
+  background-color: #4a2e21; /* Darker brown on hover */
+}
+
+/* ========== Main Content ========== */
+.content {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+/* Status posting section */
+.status-post {
+  background-color: white;
+  padding: 15px;
+  border-radius: 10px;
+}
+
+/* Profile picture in status section */
+.status {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.status-profile-pic {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+/* Post input field */
+.post-input textarea {
+  width: 100%;
+  height: 60px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 10px;
+  margin-top: 10px;
+}
+
+/* Buttons for posting */
+.post-button {
+  background-color: #5a3a2b; /* Dark brown */
+  color: white;
+  border: none;
+  padding: 10px;
+  margin: 5px;
+  border-radius: 5px;
   cursor: pointer;
 }
 
-.close-btn:hover {
-  color: red;
+.post-button:hover {
+  background-color: #4a2e21; /* Darker brown on hover */
 }
 
-/* Main Content */
-.main-content {
-  max-width: 800px;
-  margin: auto;
-  padding: 20px;
-  padding-top: 80px;
-  flex-grow: 1;
+/* ========== Right Sidebar ========== */
+.right-sidebar {
+  width: 250px;
 }
 
-/* Post Section */
-.status-post, .post-container, .post {
+/* Event and friend request cards */
+.card {
   background-color: white;
   padding: 10px;
   border-radius: 10px;
-  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
-  margin-bottom: 20px;
-}
-
-.status-post textarea {
-  width: 100%;
-  padding: 10px;
-  border-radius: 5px;
-}
-
-/* Interaction Section */
-.interaction {
-  display: flex;
-  justify-content: flex-start;
-  gap: 10px;
-  margin-top: 10px;
-}
-
-.interaction .icon-button {
-  background-color: #116A7B;
-  color: #fff;
-  border: none;
-  padding: 8px 20px;
-  border-radius: 5px;
-  cursor: pointer;
-  font-size: 14px;
-  display: flex;
-  align-items: center;
-  gap: 5px;
-  transition: background-color 0.3s ease;
-}
-
-.interaction .icon-button:hover {
-  background-color: #0e5a6a;
-}
-
-/* Right Sidebar */
-.right-sidebar {
-  width: 300px;
-  padding: 10px;
-  background-color: #fff;
-  position: fixed;
-  top: 60px;
-  right: 0;
-  height: calc(100vh - 60px);
-  overflow-y: auto;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-}
-
-/* Friend Request */
-.card.friend-request {
-  background-color: #fff;
-  padding: 15px;
-  border-radius: 10px;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  margin-bottom: 10px;
   text-align: center;
 }
 
-.friend-request h3 {
-  font-size: 18px;
-}
-
-.friend-avatar {
-  width: 50%;
+/* Event image */
+.card img {
+  width: 100%;
   border-radius: 10px;
 }
 
-.friend-request .actions {
-  display: flex;
-  justify-content: space-between;
-  margin-top: 10px;
+/* Friend request avatar */
+.friend-avatar {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  object-fit: cover;
 }
 
-.accept, .decline {
-  background-color: rgb(120, 159, 231);
-  color: white;
-  padding: 5px 20px;
+/* Buttons for friend requests */
+.actions button {
+  margin: 5px;
+  padding: 8px;
+  border: none;
   border-radius: 5px;
   cursor: pointer;
+}
+
+/* Accept button */
+.accept {
+  background-color: #4CAF50; /* Green */
+  color: white;
 }
 
 .accept:hover {
-  background-color: green;
+  background-color: #45a049;
+}
+
+/* Decline button */
+.decline {
+  background-color: #f44336; /* Red */
+  color: white;
 }
 
 .decline:hover {
-  background-color: darkred;
+  background-color: #e31b0c;
 }
 
-/* Footer */
+/* ========== Footer ========== */
 .footer {
-  background-color: #644535;
-  color: #FFEAD2;
-  padding: 20px 0;
+  background-color: #5a3a2b;
+  color: white;
   text-align: center;
-  position: fixed;
-  bottom: 0;
-  width: 100%;
-}
-
-.footer-bottom p {
-  font-size: 14px;
-}
-
-/* Responsive Styles */
-@media (max-width: 767px) {
-  .main-content {
-      flex-direction: column;
-  }
-
-  .left-sidebar, .right-sidebar {
-      width: 100%;
-      margin-bottom: 20px;
-  }
-
-  .content {
-      margin-left: 0;
-      padding-top: 70px;
-  }
+  padding: 10px;
+  margin-top: 20px;
 }

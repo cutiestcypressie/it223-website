@@ -10,27 +10,34 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <!-- Navigation Bar -->
-    <nav class="navigation_bar">
-        <div class="nav-left">
-            <a href="#" class="logo"><i class="fa fa-home"></i> Cyssigram </a>
-            <a href="#"><i class="fa fa-globe"></i></a>
-            <a href="#"><i class="fa fa-user"></i></a>
-            <a href="#"><i class="fa fa-envelope"></i></a>
-            <a href="#" class="notification">
-                <i class="fa fa-bell"></i>
-                <span class="badge">3</span>
-        </div>
-        <div class="nav-center">
-
-            </a>
-        </div>
-        <div class="nav-right">
-            <a href="#" class="profile-icon">
-                <img src="Cy .png" alt="Profile">
-            </a>
-        </div>
-    </nav>
+        <!-- Navigation Bar -->
+        <nav class="navigation_bar">
+            <div class="nav-left">
+                <a href="#" class="logo"><i class="fa fa-home"></i> Cyssigram </a>
+                <a href="#" class="nav-icon" title="News"><i class="fa fa-globe"></i></a>
+                <a href="#" class="nav-icon" title="Account Settings"><i class="fa fa-user"></i></a>
+                <a href="#" class="nav-icon" title="Messages"><i class="fa fa-envelope"></i></a>
+    
+                <!-- Notifications Dropdown -->
+                <div class="dropdown">
+                    <button class="dropdown-button" title="Notifications">
+                        <i class="fa fa-bell"></i>
+                        <span class="badge">3</span>
+                    </button>     
+                    <div class="dropdown-content">
+                        <a href="#">One new friend request</a>
+                        <a href="#">Kyle Echarri posted on your wall</a>
+                        <a href="#">Andrea Brillantes likes your post</a>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="nav-right">
+                <a href="#" class="profile-icon">
+                    <img src="Cy.png" alt="Profile">
+                </a>
+            </div>
+        </nav>    
 
     <div class="container">
         <!-- Sidebar -->
@@ -58,14 +65,13 @@
         <main class="content">
             <section class="status-post">
                 <section class="status">
-                    <img src="images/dalsprof.jpg" alt="Profile Picture" class="status-profile-pic">
                     <span>Cypress Bullo</span>
                 </section>
                 <section class="post-input">
                     <textarea placeholder="Post Something"></textarea>
-                    <button class="post-button">Post</button>
-                    <button class="post-button">Live</button>
-                    <button class="post-button">Add Photo</button>
+                    <div class="post-buttons">
+                        <button class="post-button">Post</button>
+                    </div>
                 </section>
             </section>
             <section class="post-container">

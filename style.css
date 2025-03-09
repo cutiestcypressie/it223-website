@@ -12,7 +12,7 @@ body {
   justify-content: space-between;
   align-items: center;
   background: #37474F;
-  padding: 10px 20px;
+  padding: 3px;
   color: white;
 }
 
@@ -28,20 +28,21 @@ body {
   font-weight: semi-bold;
   text-decoration: none;
   margin-right: 20px;
+  margin-left: 20px;
 }
 
 .nav-icon {
   color: white;
   text-decoration: none;
   font-size: 18px;
-  margin-right: 15px;
-  padding: 8px;
-  transition: single 0.3s;
+  margin-right: 30px;
+  padding: 10px;
+  transition: single 0.1s;
 }
 
 .nav-icon:hover {
   background: #5a3a2b
-  border-radius: 5px;
+  padding-box: 100%;
 }
 
 /* Dropdown Menu */
@@ -128,7 +129,7 @@ html, body {
   display: flex;
   padding: 20px;
   gap: 20px;
-  margin-left: 250px;
+  margin-left: 150px;
 }
 
 /* Footer should stay at the bottom */
@@ -153,20 +154,16 @@ body {
 /* ========== Navigation Bar ========== */
 .navigation_bar {
   background-color: #5a3a2b; /* Dark brown */
-  padding: 17px;
   display: flex;
   align-items: center;
-  justify-content: space-between;
   color: white;
-  margin: 0px;
 }
 
 /* Navigation links */
 .navigation_bar a {
   color: white;
   text-decoration: none;
-  padding: 10px 15px;
-  font-size: 22px;
+  font-size: 17px;
 }
 
 .navigation_bar a:hover {
@@ -180,13 +177,12 @@ body {
 
 .badge {
   position: absolute;
-  top: -5px;
-  right: -8px;
-  background: green;
+  top: 5px;
+  right: -14px;
+  background: rgb(68, 195, 68);
   color: white;
   font-size: 12px;
-  padding: 3px 7px;
-  border-radius: 50%;
+  border-radius: 70%;
 }
 
 /* Profile icon in the navigation bar */
@@ -207,10 +203,10 @@ body {
 
 /* ========== Sidebar (Left Section) ========== */
 .sidebar {
-  font-size: 20px;
+  font-size: 15px;
   font-style:'Arial', normal;
   width: 22%;
-  height: 500px;
+  height: 10px;
   justify-content: center;
   align-items: center;  
 
@@ -218,9 +214,9 @@ body {
 
 /* Sidebar profile card */
 .w3-card {
-  padding: 15px;
+  padding: 10px;
   background: white;
-  border-radius: 10px;
+  border-radius: 5px;
 }
 
 .w3-circle {
@@ -231,9 +227,9 @@ body {
 .sidebar_menu {
   background-color: #5a3a2b; /* Dark brown */
   width: 100%;
-  border-radius: 10px;
+  border-radius: 5px;
   margin-top: 10px;
-  padding: 15px;
+  padding: 10px;
   color: #ffffff;
   justify-content: center;
   display: inside;
@@ -243,7 +239,6 @@ body {
 
 .sidebar_menu button {
   font-style:'Arial', normal;
-  font-size: 20px;
   width: 250px;
   height: ;
   background: none;
@@ -251,7 +246,7 @@ body {
   color: white;
   text-align: left;
   cursor: pointer;
-  font-size: 22px;
+  font-size: 16px;
 }
 
 .sidebar_menu button:hover {
@@ -264,13 +259,13 @@ body {
   flex-grow: 1;
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: 5px;
 }
 
 /* Status posting section */
 .status-post {
   background-color: white;
-  padding: 30px;
+  padding: 15px;
   row-gap: 50px; 
   border-radius: 5px;
   width: 100%; /* Adjust width relative to the parent/container */
@@ -301,17 +296,18 @@ body {
   border: 1px solid #ccc;
   border-radius: 5px;
   padding: 10px;
-  margin-top: 10px;
+  margin-top: 5px;
   font-size: 20px;
 }
 
 
 /* Buttons for posting */
 .post-button {
-  padding: 10px;
+  padding: 5px;
   cursor: pointer;
-  font-size: 22px;
+  font-size: 15px;
   justify-content: center;
+  margin-top: 10px;
   gap: 1px;
   background-color: #5a3a2b;
   color: #ffffff;
@@ -331,9 +327,10 @@ body {
 .card {
   background-color: white;
   padding: 10px;
-  border-radius: 10px;
+  border-radius: 5px;
   margin-bottom: 10px;
   text-align: center;
+  width: 125%;
 }
 
 /* Event image */

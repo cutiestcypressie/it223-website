@@ -360,6 +360,7 @@ textarea {
 
 /* Accept button */
 .accept {
+  padding:10px 20px;
   background-color: #4CAF50;
   color: white;
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
@@ -371,6 +372,7 @@ textarea {
 
 /* Decline button */
 .decline {
+  padding:10px 20px;
   background-color: #f44336; 
   color: white;
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
@@ -694,3 +696,54 @@ footer {
   border-radius: 3px;
   cursor: pointer;
 }
+
+/* Ad Box Styling */
+.ads-box {
+  position: relative;
+  width: 250px;
+  height: 150px;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+/* Close Button (CSS-Only Toggle) */
+.close-btn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background-color: #c2cbd3;
+  padding: 5px;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+/* Close Button Hover Effect */
+.close-btn:hover {
+  background: rgb(255, 255, 255);
+}
+
+/* Hide Ad when "close button" is clicked */
+.ads-box {
+  width: 200px;
+  height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background-color: white;
+  
+}
+
+/* Ad GIF */
+.ads-gif {
+  max-width: 90%;
+  max-height: 90%;
+  border-radius: 10px;
+}
+

@@ -99,7 +99,7 @@ html, body {
 }
 
 .dropdown-content a:hover {
-  background: #ddd;
+  background: #ffffff;
 }
 
 .dropdown:hover .dropdown-content {
@@ -169,8 +169,9 @@ html, body {
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
 }
 
-.w3-circle {
+.w3-circle strong {
   border-radius: 50%;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 /* Sidebar menu */
@@ -282,7 +283,7 @@ textarea {
 }
 /* Event and friend request cards */
 .card-event {
-  background-color: white;
+  background-color: #d79055a3;
   padding: 15px;
   border-radius: 5px;
   margin: 0 auto 20px auto;
@@ -321,7 +322,7 @@ textarea {
 }
 
 .card-friend-request {
-  background-color: white;
+  background-color: #d79055a3;
   width: 90%;
   max-width: 400px; /* Keep it balanced */
   padding: 15px;
@@ -337,10 +338,10 @@ textarea {
 }
 
 .card-friend-request img {
-  width: 100px; /* Adjust size */
-  height: 100px; /* Keep it square */
-  border-radius: 20%; /* Circular shape */
-  object-fit: cover; /* Prevent stretching */
+  width: 100px;
+  height: 100px;
+  border-radius: 20%;
+  object-fit: cover;
 }
 
 
@@ -361,6 +362,7 @@ textarea {
 .accept {
   background-color: #4CAF50;
   color: white;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 .accept:hover {
@@ -371,6 +373,7 @@ textarea {
 .decline {
   background-color: #f44336; 
   color: white;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 .decline:hover {
@@ -383,7 +386,7 @@ textarea {
   width: 100%;
   height: auto;
   border-radius: 5px;
-  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 4px 8px rgba(255, 255, 255, 0.2);
   padding: 15px;
 }
 
@@ -474,6 +477,7 @@ textarea {
   border: none;
   border-radius: 5px;
   cursor: pointer;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 .more-info-btn:hover {
@@ -660,4 +664,33 @@ footer {
   padding: 10px 0;
   color: white;
   z-index: 1000;
+}
+
+.notification {
+  background-color: #5a3a2b9a;
+  border-radius: 5px;
+  padding: 15px;
+  width: 350px;
+  position: relative;
+  border: 1px solid #ccc;
+  font-family: Arial, sans-serif;
+}
+
+.notification strong {
+  font-size: 16px;
+}
+
+.notification p {
+  margin: 5px 0 0;
+  font-size: 14px;
+}
+
+.close-btn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background-color: #c2cbd3;
+  padding: 5px;
+  border-radius: 3px;
+  cursor: pointer;
 }

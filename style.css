@@ -128,7 +128,7 @@ html, body {
 /* Main container to fill remaining space */
 .container {
   flex: 1; 
-  padding-bottom: 50px;
+  padding-bottom: 70px;
   display: flex;
   padding: 20px;
   gap: 10px;
@@ -629,6 +629,12 @@ textarea {
     width: 100%;
   }
 
+  footer {
+    padding: 8px 0;
+    font-size: 14px;
+  }
+
+
 }
 
 button:focus,
@@ -642,4 +648,16 @@ a:focus {
 .card-event,
 .card-friend-request {
   border-radius: 5px;
+}
+
+footer {
+  background-color: #5a3a2b;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  padding: 10px 0;
+  color: white;
+  z-index: 1000;
 }

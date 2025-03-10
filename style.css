@@ -158,7 +158,6 @@ html, body {
   justify-content: center;
   align-items: center; 
   margin-left: 10%; 
-
 }
 
 /* Sidebar profile card */
@@ -300,6 +299,7 @@ textarea {
 .card-event img {
   width: 100%;
   height: auto;
+  max-width: 100%;
 }
 
 .card-event .event-details {
@@ -339,9 +339,10 @@ textarea {
 
 .card-friend-request img {
   width: 100px;
-  height: 100px;
+  height: auto;
   border-radius: 20%;
   object-fit: cover;
+  max-width: 100%;
 }
 
 
@@ -401,9 +402,10 @@ textarea {
 
 .post-profile img {
   width: 70px; /* Adjust size as needed */
-  height: 70px;
+  height: auto;
   border-radius: 50%; /* Makes it circular */
   object-fit: cover;
+  max-width: 100%;
 }
 
 .profile-pic {
@@ -415,7 +417,7 @@ textarea {
 
 .post-info {
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-start;
   width: 100%;
   align-items: center;
 }
@@ -445,7 +447,8 @@ textarea {
 
 .post-images img {
   width: 100%;
-  height: auto;
+  height: 100%;
+  max-width: 100%;
   border-radius: 10px;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
 }
@@ -463,6 +466,8 @@ textarea {
   justify-content: center;
   color: white;
   width:100px;
+  padding: 12px;
+  font-size: 16px;
 }
 
 .more-info-btn {
@@ -574,25 +579,29 @@ textarea {
 @media (max-width: 768px) {
   .container {
     flex-direction: column;
-    margin-left: 0;
-    padding: 10px;
+    margin-left: 10px;
+    padding: 15px;
   }
 
   .sidebar {
     width: 100%;
-    height: auto;
+    margin: 10px 0;
   }
 
   .right-sidebar {
     width: 100%;
+    margin: 10px 0;
+    margin-left: 0%;
+    margin-left: 0%;
   }
 
   .post-images {
-    flex-wrap: wrap;
+    grid-template-columns: 1fr !important; 
   }
 
   .post-images img {
-    grid-template-columns: 1fr;
+    width: 100%;
+    height: auto;
   }
 
   .post-actions {
@@ -606,27 +615,22 @@ textarea {
     justify-content: center;
   }
 
-  .footer {
-    text-align: center;
-    padding: 15px;
-    font-size: 14px;
-  }
 
   .right-sidebar {
     width: 100%;
-    margin: 10px 0;
+    margin: 0;
     align-items: center;
   }
 
   .card-event, .card-friend-request {
-    width: 90%; /* Adjust to fit smaller screens */
-    max-width: 400px; /* Prevent them from becoming too large */
-    margin: auto; /* Center align */
+    width: 90%;
+    max-width: 400px;
+    margin: auto;
   }
   
   .navigation_bar {
-    flex-wrap: wrap;
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
   }
   
   .post-button,
@@ -634,13 +638,90 @@ textarea {
   .post-actions button {
     width: 100%;
   }
-
-  footer {
+   
+  .footer {
     padding: 8px 0;
     font-size: 14px;
   }
 
+  .ads-box {
+    width: 100%;
+    max-width: 250px;
+    height: auto;
+    margin: 10px auto;
+  }
 
+  .content {
+    width: 100%;
+  }
+
+  .nav-left {
+    flex-direction: row;
+    align-items: left;
+  }
+  
+  .nav-right {
+    flex-direction: row;
+    align-items: right;
+  }
+
+  .nav-icon{
+    margin-right: 10px;
+  }
+
+  .dropdown-content {
+    position: static;
+    width: 100%;
+  }
+
+  .notification {
+    width: 100%;
+    max-width: 350px;
+    margin: 10px auto;
+  }
+
+  .footer {
+    padding: 15px;
+    font-size: 14px;
+  }
+
+
+}
+
+@media (max-width: 600px) {
+  .navigation_bar {
+    flex-direction: column;
+    padding: 5px;
+  }
+
+  .nav-left, .nav-right {
+    width: 100%;
+    text-align: center;
+  }
+
+  .nav-icon {
+    margin-right: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  body {
+    font-size: 14px;
+  }
+
+  .post-container {
+    padding: 10px;
+  }
+
+  .post-actions {
+    flex-direction: column;
+    gap: 5px; 
+  }
+
+  .footer {
+    padding: 10px;
+    font-size: 12px;
+  }
 }
 
 button:focus,
@@ -656,14 +737,14 @@ a:focus {
   border-radius: 5px;
 }
 
-footer {
+.footer {
   background-color: #5a3a2b;
   position: fixed;
   bottom: 0;
   left: 0;
   width: 100%;
   text-align: center;
-  padding: 10px 0;
+  padding: 0;
   color: white;
   z-index: 1000;
 }
@@ -676,6 +757,7 @@ footer {
   position: relative;
   border: 1px solid #ccc;
   font-family: Arial, sans-serif;
+   z-index: 1000;
 }
 
 .notification strong {

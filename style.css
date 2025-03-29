@@ -401,18 +401,12 @@ textarea {
 
 .post-profile img {
   width: 70px; /* Adjust size as needed */
-  height: auto;
+  height: 60px;
   border-radius: 50%; /* Makes it circular */
   object-fit: cover;
   max-width: 100%;
 }
 
-.profile-pic {
-  width: 60px;
-  height: 60px;
-  border-radius: 50%;
-  margin-right: 10px;
-}
 
 .post-info {
   display: flex;
@@ -574,7 +568,8 @@ textarea {
   background-color: var(--hover-brown);
 }
 
-@media (max-width: 768px) {
+
+@media (max-width: 844px) {
   .container {
     flex-direction: column;
     margin-left: 10px;
@@ -661,13 +656,13 @@ textarea {
     align-items: left;
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
-    gap: 10px;
+    justify-content: left;
+    gap: -1000px;
   }
   
   .nav-right {
     flex-direction: row;
-    align-items: right;
+    align-items: left;
   }
 
   .nav-icon{
@@ -683,6 +678,7 @@ textarea {
 
   .dropdown {
     position: relative;
+    width: 100%;
   }
 
   .notification {
@@ -737,36 +733,36 @@ textarea {
     padding: 3px 7px;
   }
 
-}
-
-@media (max-width: 768px) {
   .profile-container {
-      width: 95%;
+    width: 95%;
   }
 
   .profile-pic {
-      width: 100px;
-      height: 100px;
+    width: 100px;
+    height: 100px;
   }
 
   .profile-details {
-      font-size: 14px;
+    font-size: 14px;
   }
+
 }
+
 
 @media (max-width: 600px) {
   .navigation_bar {
-    flex-direction: column;
-    padding: 5px;
+    flex-direction: row;
+
   }
 
-  .nav-left, .nav-right {
+  .nav-left {
     width: 100%;
     text-align: left;
   }
 
-  .nav-icon {
-    margin-right: 10px;
+  .nav-right{
+    width: 100%;
+    text-align: left;
   }
 
   .footer {
@@ -793,6 +789,24 @@ textarea {
     padding: 10px;
     font-size: 12px;
   }
+
+  .navigation_bar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .nav-left, .nav-right {
+    width: 50%;
+    min-width: auto;
+  }
+
+  .navigation_bar a {
+    font-size: 14px;
+    align-items: left;
+    text-align: left;
+    display: flex;
+  }
+
 }
 
 button:focus,
